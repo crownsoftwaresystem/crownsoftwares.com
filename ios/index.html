@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iOS App Development — Crown Software Systems</title>
+  <meta name="description" content="Custom native iOS app development using Swift and SwiftUI. Built for performance, App Store approval, and long-term scalability."/>
+  <meta property="og:title" content="iOS Development — Crown Software Systems"/>
+  <meta property="og:description" content="Native Swift and SwiftUI iOS applications built for performance and the App Store."/>
+  <meta property="og:type" content="website"/>
+  <link rel="icon" href="../assets/images/logo.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <link rel="stylesheet" href="../assets/css/animations.css"/>
+</head>
+<body>
+
+<header class="header" role="banner">
+  <div class="container">
+    <div class="header__inner">
+      <a href="../" class="header__logo"><span>CROWN</span> SOFTWARE SYSTEMS</a>
+      <div class="header__center"><button class="btn btn-primary btn-sm" data-modal="request">Leave a Request</button></div>
+      <div class="header__right">
+        <span class="header__sections-label">Sections</span>
+        <button class="burger" aria-label="Open navigation menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-overlay" role="navigation">
+  <div class="nav-overlay__inner">
+    <ul class="nav-overlay__list">
+      <li class="nav-overlay__item"><a href="../" class="nav-overlay__link" data-page="home">Home</a></li>
+      <li class="nav-overlay__item"><a href="../ios/" class="nav-overlay__link active">iOS Development</a></li>
+      <li class="nav-overlay__item"><a href="../android/" class="nav-overlay__link">Android Development</a></li>
+      <li class="nav-overlay__item"><a href="../design/" class="nav-overlay__link">App Design</a></li>
+      <li class="nav-overlay__item"><a href="../aso/" class="nav-overlay__link">App Marketing</a></li>
+      <li class="nav-overlay__item"><a href="../about/" class="nav-overlay__link">About Us</a></li>
+      <li class="nav-overlay__item"><a href="../contacts/" class="nav-overlay__link">Contacts</a></li>
+    </ul>
+    <div class="nav-overlay__cta"><button class="btn btn-primary btn-lg" data-modal="request">Leave a Request</button></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="blob blob-1" style="top:-15%;left:-5%;opacity:0.6;"></div>
+  <div class="blob blob-3" style="bottom:0;right:5%;"></div>
+  <div class="grid-bg"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <p class="label hero-anim-1">iOS Development</p>
+    <h1 class="hero-anim-2" style="max-width:780px;margin-top:0.75rem;margin-bottom:1.25rem;">Native iOS apps built for<br/><span class="text-gradient">performance and growth</span></h1>
+    <p class="hero-anim-3" style="max-width:540px;font-size:1.1rem;">We engineer Swift and SwiftUI applications that pass App Store review, delight users, and scale with your business — built with the architecture to last.</p>
+    <div class="hero-anim-4" style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;">
+      <button class="btn btn-primary btn-lg" data-modal="request">Start iOS Project</button>
+      <a href="../contacts/" class="btn btn-outline btn-lg">Talk to Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="section" style="padding-top:5rem;">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="label">What We Build</p>
+      <h2>iOS development <span class="text-gradient">capabilities</span></h2>
+      <p>From consumer apps to enterprise tools, our iOS practice covers the full technical spectrum of what the Apple platform makes possible.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal delay-1">
+        <div class="card__icon">📱</div>
+        <h4>iPhone &amp; iPad Apps</h4>
+        <p>Universal applications optimised for all Apple device sizes, orientations, and input modalities, including Apple Pencil and keyboard support.</p>
+      </div>
+      <div class="card reveal delay-2">
+        <div class="card__icon">🔗</div>
+        <h4>API &amp; Backend Integration</h4>
+        <p>Robust networking layers, REST and GraphQL integration, offline-first data handling, and background sync — engineered reliably.</p>
+      </div>
+      <div class="card reveal delay-3">
+        <div class="card__icon">🔔</div>
+        <h4>Push &amp; Local Notifications</h4>
+        <p>Engagement-driving notification systems, rich media notifications, and notification action handling with full APNs integration.</p>
+      </div>
+      <div class="card reveal delay-1">
+        <div class="card__icon">💳</div>
+        <h4>In-App Purchases &amp; Subscriptions</h4>
+        <p>StoreKit 2 integration, subscription management, receipt validation, and monetisation flows that maximise conversion and retention.</p>
+      </div>
+      <div class="card reveal delay-2">
+        <div class="card__icon">🔒</div>
+        <h4>Security &amp; Privacy</h4>
+        <p>Keychain storage, biometric authentication, data encryption, and full compliance with App Store privacy requirements and GDPR.</p>
+      </div>
+      <div class="card reveal delay-3">
+        <div class="card__icon">🧪</div>
+        <h4>Testing &amp; QA</h4>
+        <p>XCTest unit and UI testing suites, TestFlight beta distribution, and structured QA processes before every App Store submission.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TECHNICAL APPROACH -->
+<section class="section" style="background:var(--bg2);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
+      <div>
+        <div class="section-head reveal">
+          <p class="label">Technical Foundation</p>
+          <h2>Architecture that works in the long run</h2>
+          <p>We do not write code to get the job done today. We write code that your team — or ours — can maintain, extend, and scale for years.</p>
+        </div>
+        <div class="feature-list reveal">
+          <div class="feature-item">
+            <div class="feature-item__icon">⚙️</div>
+            <div>
+              <h4>Clean Architecture (MVVM / VIP)</h4>
+              <p>Clear separation of concerns, dependency injection, and layered architecture that makes code testable and predictable.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__icon">🧬</div>
+            <div>
+              <h4>Swift &amp; SwiftUI First</h4>
+              <p>Modern Swift codebase using current language features. SwiftUI for new interfaces where appropriate, with UIKit expertise where needed.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-item__icon">📦</div>
+            <div>
+              <h4>Modular Codebase</h4>
+              <p>Feature modules, clear interface boundaries, and Swift Package Manager integration for a maintainable, scalable project structure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal delay-2">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r3);padding:2.5rem;">
+          <p class="label" style="margin-bottom:1.25rem;">App Store Readiness</p>
+          <div class="steps">
+            <div class="step" style="padding:1.25rem 0;">
+              <div class="step__num">01</div>
+              <div class="step__content"><h4>Guidelines Compliance</h4><p style="font-size:0.88rem;">We build strictly within Apple Human Interface Guidelines to minimise review friction and accelerate submission approvals.</p></div>
+            </div>
+            <div class="step" style="padding:1.25rem 0;">
+              <div class="step__num">02</div>
+              <div class="step__content"><h4>Privacy Manifests</h4><p style="font-size:0.88rem;">Full privacy manifest declarations, required reason API documentation, and accurate App Privacy nutrition labels.</p></div>
+            </div>
+            <div class="step" style="padding:1.25rem 0;">
+              <div class="step__num">03</div>
+              <div class="step__content"><h4>Metadata &amp; Store Assets</h4><p style="font-size:0.88rem;">App name, subtitle, descriptions, keywords, and screenshots — all crafted to perform in App Store search, not just satisfy review.</p></div>
+            </div>
+            <div class="step" style="padding:1.25rem 0;border:none;">
+              <div class="step__num">04</div>
+              <div class="step__content"><h4>TestFlight &amp; Beta</h4><p style="font-size:0.88rem;">Structured TestFlight beta periods with internal and external testers, feedback integration, and staged rollouts at launch.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PERFORMANCE & SECURITY -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="label">Performance &amp; Security</p>
+      <h2>Built for real users,<br/>not just demo conditions</h2>
+      <p>Every Crown iOS project is profiled for memory, CPU, battery, and network efficiency — because a slow or unstable app loses users and ratings fast.</p>
+    </div>
+    <div class="grid-2" style="margin-bottom:3rem;">
+      <div class="card reveal delay-1">
+        <h4>Memory &amp; CPU Profiling</h4>
+        <p>Instruments profiling for memory leaks, retain cycles, and CPU overhead throughout development — not just before submission.</p>
+      </div>
+      <div class="card reveal delay-2">
+        <h4>Crash-Free Target</h4>
+        <p>Structured error handling, crash reporting integration, and pre-release QA targeting crash-free rates above 99.5% from day one.</p>
+      </div>
+      <div class="card reveal delay-1">
+        <h4>Secure Data Handling</h4>
+        <p>Keychain for sensitive storage, certificate pinning where appropriate, and zero plain-text credential exposure in logs or storage.</p>
+      </div>
+      <div class="card reveal delay-2">
+        <h4>Network Resilience</h4>
+        <p>Offline-first architecture, graceful degradation on poor connections, and background task management for data-heavy operations.</p>
+      </div>
+    </div>
+
+    <div class="cta-block reveal">
+      <p class="label" style="margin-bottom:1rem;">Let's build your iOS product</p>
+      <h2>Ready to ship a native iOS app?</h2>
+      <p>Tell us what you're building and we'll put together an initial approach — no commitment required.</p>
+      <div class="btn-group">
+        <button class="btn btn-primary btn-lg" data-modal="request">Start iOS Project</button>
+        <a href="../contacts/" class="btn btn-outline btn-lg">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div><p class="footer__col-title">Offers</p><ul class="footer__links"><li><a href="../ios/" class="footer__link">iOS Development</a></li><li><a href="../android/" class="footer__link">Android Development</a></li><li><a href="../design/" class="footer__link">App Design</a></li><li><a href="../aso/" class="footer__link">App Marketing</a></li></ul></div>
+      <div><p class="footer__col-title">Company</p><ul class="footer__links"><li><a href="../" class="footer__link">Home</a></li><li><a href="../contacts/" class="footer__link">Contacts</a></li><li><a href="../about/" class="footer__link">About Us</a></li><li><a href="../policy/" class="footer__link">Privacy Policy</a></li></ul></div>
+      <div><p class="footer__col-title">Legal Information</p><div class="footer__legal"><p>CROWN SOFTWARE SYSTEMS LTD</p><p>635 Manchester Road</p><p>Wardley, Swinton</p><p>MANCHESTER, M27 9QH</p><p style="margin-top:0.5rem;">Company number 16940664</p><p><a href="mailto:support@crownsoftwares.com">support@crownsoftwares.com</a></p></div></div>
+    </div>
+    <div class="footer__bottom"><p class="footer__copy">© 2026 CROWN SOFTWARE SYSTEMS LTD. All rights reserved.</p><span class="footer__logo-text"><span>CROWN</span> SOFTWARE SYSTEMS</span></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal">
+    <button class="modal__close" aria-label="Close modal">✕</button>
+    <p class="label">Get in Touch</p>
+    <h3 id="modal-title">Leave a Request</h3>
+    <div class="modal-form-body">
+      <form class="modal-form" novalidate style="margin-top:1.5rem;">
+        <div class="form-group"><label class="form-label" for="modal-name">Name</label><input class="form-input" type="text" id="modal-name" name="name" placeholder="Your full name"/></div>
+        <div class="form-group"><label class="form-label" for="modal-company">Company</label><input class="form-input" type="text" id="modal-company" name="company" placeholder="Company name (optional)"/></div>
+        <div class="form-group"><label class="form-label" for="modal-email">Email</label><input class="form-input" type="email" id="modal-email" name="email" placeholder="your@email.com"/></div>
+        <div class="form-group"><label class="form-label" for="modal-comment">Comment</label><textarea class="form-input" id="modal-comment" name="comment" placeholder="Tell us about your project…"></textarea></div>
+        <button type="submit" class="btn btn-primary modal-submit" style="width:100%;justify-content:center;">Send Request</button>
+        <p class="form-consent">By clicking "Send Request", you agree to the processing of personal data in accordance with the <a href="../policy/">Privacy Policy</a>.</p>
+      </form>
+    </div>
+    <div class="modal__success"><div class="success-icon">✦</div><h4>Request Received</h4><p style="color:var(--text2);font-size:0.92rem;margin-top:0.5rem;">Thank you. We will be in touch within one business day.</p></div>
+  </div>
+</div>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/modal.js"></script>
+</body>
+</html>

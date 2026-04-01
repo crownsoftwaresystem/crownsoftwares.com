@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Android App Development — Crown Software Systems</title>
+  <meta name="description" content="Custom native Android development with Kotlin and Jetpack Compose. Google Play-ready, maintainable, and built for the full Android ecosystem."/>
+  <meta property="og:title" content="Android Development — Crown Software Systems"/>
+  <meta property="og:description" content="Kotlin-powered Android apps built for performance, device coverage, and Google Play success."/>
+  <meta property="og:type" content="website"/>
+  <link rel="icon" href="../assets/images/logo.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <link rel="stylesheet" href="../assets/css/animations.css"/>
+</head>
+<body>
+
+<header class="header" role="banner">
+  <div class="container">
+    <div class="header__inner">
+      <a href="../" class="header__logo"><span>CROWN</span> SOFTWARE SYSTEMS</a>
+      <div class="header__center"><button class="btn btn-primary btn-sm" data-modal="request">Leave a Request</button></div>
+      <div class="header__right">
+        <span class="header__sections-label">Sections</span>
+        <button class="burger" aria-label="Open navigation menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-overlay" role="navigation">
+  <div class="nav-overlay__inner">
+    <ul class="nav-overlay__list">
+      <li class="nav-overlay__item"><a href="../" class="nav-overlay__link" data-page="home">Home</a></li>
+      <li class="nav-overlay__item"><a href="../ios/" class="nav-overlay__link">iOS Development</a></li>
+      <li class="nav-overlay__item"><a href="../android/" class="nav-overlay__link active">Android Development</a></li>
+      <li class="nav-overlay__item"><a href="../design/" class="nav-overlay__link">App Design</a></li>
+      <li class="nav-overlay__item"><a href="../aso/" class="nav-overlay__link">App Marketing</a></li>
+      <li class="nav-overlay__item"><a href="../about/" class="nav-overlay__link">About Us</a></li>
+      <li class="nav-overlay__item"><a href="../contacts/" class="nav-overlay__link">Contacts</a></li>
+    </ul>
+    <div class="nav-overlay__cta"><button class="btn btn-primary btn-lg" data-modal="request">Leave a Request</button></div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="blob blob-2" style="top:-10%;right:-8%;opacity:0.7;"></div>
+  <div class="blob blob-3" style="bottom:0;left:0;"></div>
+  <div class="grid-bg"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <p class="label hero-anim-1">Android Development</p>
+    <h1 class="hero-anim-2" style="max-width:780px;margin-top:0.75rem;margin-bottom:1.25rem;">Android apps built for the<br/><span class="text-gradient">full Google ecosystem</span></h1>
+    <p class="hero-anim-3" style="max-width:540px;font-size:1.1rem;">Kotlin-first Android development covering the device landscape from top-tier flagships to mid-range handsets — with Google Play launch support included.</p>
+    <div class="hero-anim-4" style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;">
+      <button class="btn btn-primary btn-lg" data-modal="request">Start Android Project</button>
+      <a href="../contacts/" class="btn btn-outline btn-lg">Talk to Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:5rem;">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="label">Android Expertise</p>
+      <h2>What we build for the <span class="text-gradient">Android platform</span></h2>
+      <p>Modern Android development demands mastery of a rapidly evolving ecosystem. Our team works with current tooling, architecture patterns, and Google-recommended libraries.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal delay-1">
+        <div class="card__icon">🤖</div>
+        <h4>Jetpack Compose UI</h4>
+        <p>Declarative UI development with Jetpack Compose — faster iteration, consistent theming, and modern Android UX patterns built in from the start.</p>
+      </div>
+      <div class="card reveal delay-2">
+        <div class="card__icon">📡</div>
+        <h4>Device &amp; OS Coverage</h4>
+        <p>Tested across a representative matrix of Android versions and screen sizes, from the latest flagships to widely-used older hardware.</p>
+      </div>
+      <div class="card reveal delay-3">
+        <div class="card__icon">🗺</div>
+        <h4>Google Services Integration</h4>
+        <p>Google Maps, Firebase, Google Pay, and the full Play Services ecosystem — integrated cleanly with proper error handling and configuration.</p>
+      </div>
+      <div class="card reveal delay-1">
+        <div class="card__icon">🔋</div>
+        <h4>Battery &amp; Performance</h4>
+        <p>Background work management with WorkManager, battery-efficient scheduling, and Doze mode compliance — so your app doesn't drain user trust.</p>
+      </div>
+      <div class="card reveal delay-2">
+        <div class="card__icon">🔑</div>
+        <h4>Security &amp; Data Protection</h4>
+        <p>EncryptedSharedPreferences, Keystore-backed cryptography, ProGuard/R8 obfuscation, and Play Integrity API integration where needed.</p>
+      </div>
+      <div class="card reveal delay-3">
+        <div class="card__icon">💰</div>
+        <h4>Google Play Billing</h4>
+        <p>Play Billing Library 6+ integration, subscription management, developer-verified purchases, and promo code handling for monetised apps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section" style="background:var(--bg2);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
+      <div class="reveal">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r3);padding:2.5rem;">
+          <p class="label" style="margin-bottom:1.25rem;">Our Android Stack</p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-item__icon">🧱</div>
+              <div><h4>Kotlin &amp; Coroutines</h4><p>Idiomatic Kotlin with structured concurrency for clean, safe asynchronous code throughout.</p></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-item__icon">🏗</div>
+              <div><h4>Clean Architecture + MVVM</h4><p>Repository pattern, use-case driven domain layers, and ViewModel-first presentation logic.</p></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-item__icon">🧩</div>
+              <div><h4>Hilt Dependency Injection</h4><p>Google-recommended DI framework for clean, testable, and modular Android projects.</p></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-item__icon">🗄</div>
+              <div><h4>Room &amp; DataStore</h4><p>Type-safe local persistence with Room and preference storage with DataStore for offline-capable applications.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section-head reveal delay-1">
+          <p class="label">Maintainability</p>
+          <h2>Code you can hand off,<br/>code you can grow</h2>
+          <p>We write Android code as if we will be maintaining it — because often we are. Clear naming, consistent patterns, and thorough documentation make future changes efficient and low-risk.</p>
+        </div>
+        <div class="steps reveal delay-2">
+          <div class="step" style="padding:1rem 0;">
+            <div class="step__num">01</div>
+            <div class="step__content"><h4>Multi-Module Architecture</h4><p style="font-size:0.88rem;">Feature modules, shared libraries, and a build structure that scales from MVP to large team without turning into a maintenance burden.</p></div>
+          </div>
+          <div class="step" style="padding:1rem 0;">
+            <div class="step__num">02</div>
+            <div class="step__content"><h4>Instrumented &amp; Unit Tests</h4><p style="font-size:0.88rem;">JUnit, Mockk, and Espresso-based test suites covering business logic and critical user journeys.</p></div>
+          </div>
+          <div class="step" style="padding:1rem 0;border:none;">
+            <div class="step__num">03</div>
+            <div class="step__content"><h4>Code Documentation</h4><p style="font-size:0.88rem;">KDoc comments, README files per module, and architectural decision records so the codebase makes sense six months later.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="label">Google Play Readiness</p>
+      <h2>From build to<br/><span class="text-gradient">live on Google Play</span></h2>
+      <p>We handle the technical and editorial work of getting your app listed, discoverable, and collecting positive ratings from first week of launch.</p>
+    </div>
+    <div class="grid-2" style="margin-bottom:3rem;">
+      <div class="card reveal delay-1">
+        <h4>Play Store Listing Optimisation</h4>
+        <p>Title, short and full descriptions, keyword research, and localisation-ready content structure for strong organic ranking from launch.</p>
+      </div>
+      <div class="card reveal delay-2">
+        <h4>Store Visual Assets</h4>
+        <p>Feature graphic, phone screenshots, and tablet screenshots — all sized and designed to convert browsers into installers in search results.</p>
+      </div>
+      <div class="card reveal delay-1">
+        <h4>Pre-Launch Report Management</h4>
+        <p>We run Google's Pre-launch Report testing and address flagged issues before submission, reducing the likelihood of policy rejections.</p>
+      </div>
+      <div class="card reveal delay-2">
+        <h4>Staged Rollout Strategy</h4>
+        <p>Controlled percentage rollouts for major updates, monitoring crash rates and ratings before expanding to your full user base.</p>
+      </div>
+    </div>
+
+    <div class="cta-block reveal">
+      <p class="label" style="margin-bottom:1rem;">Build for Android</p>
+      <h2>Ready to reach the Android audience?</h2>
+      <p>Android represents over 70% of global smartphone users. Let's make sure your product is ready for them.</p>
+      <div class="btn-group">
+        <button class="btn btn-primary btn-lg" data-modal="request">Start Android Project</button>
+        <a href="../contacts/" class="btn btn-outline btn-lg">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div><p class="footer__col-title">Offers</p><ul class="footer__links"><li><a href="../ios/" class="footer__link">iOS Development</a></li><li><a href="../android/" class="footer__link">Android Development</a></li><li><a href="../design/" class="footer__link">App Design</a></li><li><a href="../aso/" class="footer__link">App Marketing</a></li></ul></div>
+      <div><p class="footer__col-title">Company</p><ul class="footer__links"><li><a href="../" class="footer__link">Home</a></li><li><a href="../contacts/" class="footer__link">Contacts</a></li><li><a href="../about/" class="footer__link">About Us</a></li><li><a href="../policy/" class="footer__link">Privacy Policy</a></li></ul></div>
+      <div><p class="footer__col-title">Legal Information</p><div class="footer__legal"><p>CROWN SOFTWARE SYSTEMS LTD</p><p>635 Manchester Road</p><p>Wardley, Swinton</p><p>MANCHESTER, M27 9QH</p><p style="margin-top:0.5rem;">Company number 16940664</p><p><a href="mailto:support@crownsoftwares.com">support@crownsoftwares.com</a></p></div></div>
+    </div>
+    <div class="footer__bottom"><p class="footer__copy">© 2026 CROWN SOFTWARE SYSTEMS LTD. All rights reserved.</p><span class="footer__logo-text"><span>CROWN</span> SOFTWARE SYSTEMS</span></div>
+  </div>
+</footer>
+
+<div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal">
+    <button class="modal__close" aria-label="Close modal">✕</button>
+    <p class="label">Get in Touch</p>
+    <h3 id="modal-title">Leave a Request</h3>
+    <div class="modal-form-body">
+      <form class="modal-form" novalidate style="margin-top:1.5rem;">
+        <div class="form-group"><label class="form-label" for="modal-name">Name</label><input class="form-input" type="text" id="modal-name" name="name" placeholder="Your full name"/></div>
+        <div class="form-group"><label class="form-label" for="modal-company">Company</label><input class="form-input" type="text" id="modal-company" name="company" placeholder="Company name (optional)"/></div>
+        <div class="form-group"><label class="form-label" for="modal-email">Email</label><input class="form-input" type="email" id="modal-email" name="email" placeholder="your@email.com"/></div>
+        <div class="form-group"><label class="form-label" for="modal-comment">Comment</label><textarea class="form-input" id="modal-comment" name="comment" placeholder="Tell us about your project…"></textarea></div>
+        <button type="submit" class="btn btn-primary modal-submit" style="width:100%;justify-content:center;">Send Request</button>
+        <p class="form-consent">By clicking "Send Request", you agree to the processing of personal data in accordance with the <a href="../policy/">Privacy Policy</a>.</p>
+      </form>
+    </div>
+    <div class="modal__success"><div class="success-icon">✦</div><h4>Request Received</h4><p style="color:var(--text2);font-size:0.92rem;margin-top:0.5rem;">Thank you. We will be in touch within one business day.</p></div>
+  </div>
+</div>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/modal.js"></script>
+</body>
+</html>

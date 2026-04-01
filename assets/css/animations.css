@@ -1,0 +1,191 @@
+/* ============================================================
+   CROWN SOFTWARE SYSTEMS — Animations Stylesheet
+   ============================================================ */
+
+/* ── Reveal on Scroll ───────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.75s cubic-bezier(0.4,0,0.2,1),
+              transform 0.75s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal.in-view { opacity: 1; transform: translateY(0); }
+
+.reveal-left {
+  opacity: 0; transform: translateX(-40px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal-left.in-view { opacity: 1; transform: translateX(0); }
+
+.reveal-right {
+  opacity: 0; transform: translateX(40px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal-right.in-view { opacity: 1; transform: translateX(0); }
+
+.reveal-scale {
+  opacity: 0; transform: scale(0.9);
+  transition: opacity 0.65s cubic-bezier(0.4,0,0.2,1), transform 0.65s cubic-bezier(0.34,1.26,0.64,1);
+}
+.reveal-scale.in-view { opacity: 1; transform: scale(1); }
+
+/* Stagger delays */
+.delay-1 { transition-delay: 0.08s !important; }
+.delay-2 { transition-delay: 0.16s !important; }
+.delay-3 { transition-delay: 0.24s !important; }
+.delay-4 { transition-delay: 0.32s !important; }
+.delay-5 { transition-delay: 0.40s !important; }
+.delay-6 { transition-delay: 0.48s !important; }
+
+/* ── Hero Entrance ──────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(-24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.hero-anim-1 { animation: fadeUp 0.9s cubic-bezier(0.4,0,0.2,1) 0.1s both; }
+.hero-anim-2 { animation: fadeUp 0.9s cubic-bezier(0.4,0,0.2,1) 0.25s both; }
+.hero-anim-3 { animation: fadeUp 0.9s cubic-bezier(0.4,0,0.2,1) 0.4s both; }
+.hero-anim-4 { animation: fadeUp 0.9s cubic-bezier(0.4,0,0.2,1) 0.55s both; }
+.hero-anim-5 { animation: fadeIn 1.2s cubic-bezier(0.4,0,0.2,1) 0.7s both; }
+
+/* ── Floating Blobs ─────────────────────────────────────────── */
+@keyframes blobFloat {
+  0%,100% { transform: translate(0,0) scale(1); }
+  33%      { transform: translate(30px,-20px) scale(1.04); }
+  66%      { transform: translate(-20px,15px) scale(0.97); }
+}
+@keyframes blobFloat2 {
+  0%,100% { transform: translate(0,0) scale(1); }
+  40%      { transform: translate(-25px,18px) scale(1.06); }
+  70%      { transform: translate(15px,-25px) scale(0.96); }
+}
+@keyframes blobFloat3 {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50%      { transform: translate(20px,30px) scale(1.03); }
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  pointer-events: none;
+  will-change: transform;
+}
+.blob-1 {
+  width: 600px; height: 600px;
+  background: radial-gradient(ellipse, rgba(201,168,76,0.18), transparent 70%);
+  animation: blobFloat 12s ease-in-out infinite;
+}
+.blob-2 {
+  width: 500px; height: 500px;
+  background: radial-gradient(ellipse, rgba(78,205,196,0.12), transparent 70%);
+  animation: blobFloat2 15s ease-in-out infinite;
+}
+.blob-3 {
+  width: 400px; height: 400px;
+  background: radial-gradient(ellipse, rgba(180,120,255,0.08), transparent 70%);
+  animation: blobFloat3 18s ease-in-out infinite;
+}
+
+/* ── Grain pulse ────────────────────────────────────────────── */
+@keyframes grainPulse {
+  0%,100% { opacity: 0.35; }
+  50% { opacity: 0.5; }
+}
+
+/* ── Counter animation ──────────────────────────────────────── */
+.counter { display: inline-block; }
+
+/* ── Glow line ──────────────────────────────────────────────── */
+@keyframes glowLine {
+  0%   { transform: scaleX(0); opacity: 0; }
+  50%  { opacity: 1; }
+  100% { transform: scaleX(1); opacity: 1; }
+}
+.glow-line {
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--cyan));
+  transform-origin: left;
+  transform: scaleX(0);
+  border-radius: 2px;
+  box-shadow: 0 0 12px rgba(201,168,76,0.5);
+  transition: transform 1s cubic-bezier(0.4,0,0.2,1);
+}
+.glow-line.in-view { transform: scaleX(1); }
+
+/* ── Typing cursor ──────────────────────────────────────────── */
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.cursor { display: inline-block; width: 3px; height: 1em; background: var(--gold); animation: blink 1s step-end infinite; vertical-align: middle; margin-left: 2px; border-radius: 1px; }
+
+/* ── Shimmer on cards ────────────────────────────────────────── */
+@keyframes shimmer {
+  from { transform: translateX(-100%) skewX(-15deg); }
+  to   { transform: translateX(200%) skewX(-15deg); }
+}
+
+/* ── Rotating gradient border ────────────────────────────────── */
+@keyframes rotateGrad {
+  from { --angle: 0deg; }
+  to   { --angle: 360deg; }
+}
+
+/* ── Page transition ─────────────────────────────────────────── */
+.page-transition-out { animation: fadeIn 0.3s reverse both; }
+
+/* ── Hover lift ──────────────────────────────────────────────── */
+.hover-lift { transition: transform var(--transition); }
+.hover-lift:hover { transform: translateY(-4px); }
+
+/* ── Subtle grid lines (bg decoration) ──────────────────────── */
+.grid-bg {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* ── Pulsing dot ─────────────────────────────────────────────── */
+@keyframes pulseDot {
+  0%,100% { box-shadow: 0 0 0 0 rgba(201,168,76,0.4); }
+  50%      { box-shadow: 0 0 0 8px rgba(201,168,76,0); }
+}
+.dot-live {
+  width: 8px; height: 8px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulseDot 2s ease infinite;
+}
+
+/* ── Hero particle canvas ────────────────────────────────────── */
+#hero-canvas {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* ── Tech badge row animation ────────────────────────────────── */
+@keyframes scrollBadge {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.badge-track-inner {
+  display: flex; gap: 1rem; width: max-content;
+  animation: scrollBadge 22s linear infinite;
+}
+.badge-track { overflow: hidden; }
+.badge-track:hover .badge-track-inner { animation-play-state: paused; }

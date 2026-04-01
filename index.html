@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crown Software Systems — Custom Mobile App Development</title>
+  <meta name="description" content="Crown Software Systems builds premium custom iOS and Android applications. From product design to App Store launch, growth support, and ASO."/>
+  <meta property="og:title" content="Crown Software Systems"/>
+  <meta property="og:description" content="We build mobile products that move business forward."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://crownsoftwares.com/"/>
+  <meta property="og:image" content="./assets/images/og-image.jpg"/>
+  <link rel="icon" href="./assets/images/logo.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="./assets/css/main.css"/>
+  <link rel="stylesheet" href="./assets/css/animations.css"/>
+</head>
+<body>
+
+<!-- ══════════════ HEADER ══════════════ -->
+<header class="header" role="banner">
+  <div class="container">
+    <div class="header__inner">
+      <a href="./" class="header__logo"><span>CROWN</span> SOFTWARE SYSTEMS</a>
+      <div class="header__center">
+        <button class="btn btn-primary btn-sm" data-modal="request" aria-label="Leave a request">Leave a Request</button>
+      </div>
+      <div class="header__right">
+        <span class="header__sections-label">Sections</span>
+        <button class="burger" aria-label="Open navigation menu" aria-expanded="false">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════ NAV OVERLAY ══════════════ -->
+<nav class="nav-overlay" role="navigation" aria-label="Main navigation">
+  <div class="nav-overlay__inner">
+    <ul class="nav-overlay__list">
+      <li class="nav-overlay__item"><a href="./" class="nav-overlay__link" data-page="home">Home</a></li>
+      <li class="nav-overlay__item"><a href="./ios/" class="nav-overlay__link">iOS Development</a></li>
+      <li class="nav-overlay__item"><a href="./android/" class="nav-overlay__link">Android Development</a></li>
+      <li class="nav-overlay__item"><a href="./design/" class="nav-overlay__link">App Design</a></li>
+      <li class="nav-overlay__item"><a href="./aso/" class="nav-overlay__link">App Marketing</a></li>
+      <li class="nav-overlay__item"><a href="./about/" class="nav-overlay__link">About Us</a></li>
+      <li class="nav-overlay__item"><a href="./contacts/" class="nav-overlay__link">Contacts</a></li>
+    </ul>
+    <div class="nav-overlay__cta">
+      <button class="btn btn-primary btn-lg" data-modal="request">Leave a Request</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero" style="min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:var(--header-h);">
+  <!-- Blobs -->
+  <div class="blob blob-1" style="top:-10%;left:-8%;"></div>
+  <div class="blob blob-2" style="bottom:-5%;right:-5%;"></div>
+  <div class="blob blob-3" style="top:40%;left:55%;"></div>
+  <!-- Grid bg -->
+  <div class="grid-bg"></div>
+  <!-- Particle canvas -->
+  <canvas id="hero-canvas" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
+
+  <div class="container" style="position:relative;z-index:2;padding-top:3rem;padding-bottom:4rem;">
+    <div style="max-width:800px;">
+      <div class="hero-anim-1" style="display:flex;align-items:center;gap:0.75rem;margin-bottom:2rem;">
+        <span class="dot-live"></span>
+        <span class="badge badge-gold">Full-Cycle Mobile Product Studio</span>
+      </div>
+      <h1 class="hero-anim-2" style="margin-bottom:1.5rem;">
+        We build mobile products that<br/>
+        <span class="text-gradient">move business forward</span>
+      </h1>
+      <p class="hero-anim-3" style="font-size:1.2rem;max-width:580px;margin-bottom:2.5rem;color:var(--text2);">
+        From product design and custom app development to App Store launch, ASO strategy, and long-term growth support.
+      </p>
+      <div class="hero-anim-4" style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:4rem;">
+        <button class="btn btn-primary btn-lg" data-modal="request">Start a Project</button>
+        <a href="./about/" class="btn btn-outline btn-lg">About the Company</a>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-anim-5" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;max-width:500px;">
+        <div class="stat">
+          <div class="stat__num" data-counter data-target="120" data-suffix="+">0</div>
+          <div class="stat__label">Projects Delivered</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-counter data-target="5" data-suffix=" yrs">0</div>
+          <div class="stat__label">Industry Experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num" data-counter data-target="98" data-suffix="%">0</div>
+          <div class="stat__label">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div style="position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);text-align:center;opacity:0.4;">
+    <div style="font-size:0.7rem;font-family:var(--ff-display);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.5rem;">Scroll</div>
+    <div style="width:1px;height:40px;background:linear-gradient(to bottom,var(--gold),transparent);margin:0 auto;"></div>
+  </div>
+</section>
+
+<!-- ══════════════ BADGE TRACK ══════════════ -->
+<section class="section-sm" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;">
+  <div class="badge-track">
+    <div class="badge-track-inner">
+      <span class="badge">Swift &amp; SwiftUI</span>
+      <span class="badge">Kotlin</span>
+      <span class="badge">Jetpack Compose</span>
+      <span class="badge">React Native</span>
+      <span class="badge">App Store Optimization</span>
+      <span class="badge">Google Play</span>
+      <span class="badge">UX Research</span>
+      <span class="badge">Design Systems</span>
+      <span class="badge">Product Strategy</span>
+      <span class="badge">Growth Support</span>
+      <span class="badge">Swift &amp; SwiftUI</span>
+      <span class="badge">Kotlin</span>
+      <span class="badge">Jetpack Compose</span>
+      <span class="badge">React Native</span>
+      <span class="badge">App Store Optimization</span>
+      <span class="badge">Google Play</span>
+      <span class="badge">UX Research</span>
+      <span class="badge">Design Systems</span>
+      <span class="badge">Product Strategy</span>
+      <span class="badge">Growth Support</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SERVICES ══════════════ -->
+<section class="section" style="background:var(--bg);">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="label">Core Services</p>
+      <h2>Everything your product needs,<br/><span class="text-gradient">from zero to market</span></h2>
+      <p>We handle the full lifecycle — from initial concept and interface design to engineering, store submission, and post-launch visibility.</p>
+    </div>
+
+    <div class="grid-4">
+      <a href="./ios/" class="card card-tilt reveal delay-1" style="display:block;">
+        <div class="card__icon">🍎</div>
+        <h3>iOS Development</h3>
+        <p>Native Swift and SwiftUI applications engineered for performance, scalability, and App Store excellence.</p>
+        <div style="margin-top:1.25rem;display:flex;align-items:center;gap:0.4rem;font-size:0.8rem;font-family:var(--ff-display);font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:0.08em;">
+          Learn more <span style="transition:transform 0.2s;">→</span>
+        </div>
+      </a>
+      <a href="./android/" class="card card-tilt reveal delay-2" style="display:block;">
+        <div class="card__icon">🤖</div>
+        <h3>Android Development</h3>
+        <p>Kotlin-powered Android apps built for the full Google ecosystem — performance-first and maintainable at scale.</p>
+        <div style="margin-top:1.25rem;display:flex;align-items:center;gap:0.4rem;font-size:0.8rem;font-family:var(--ff-display);font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:0.08em;">
+          Learn more →
+        </div>
+      </a>
+      <a href="./design/" class="card card-tilt reveal delay-3" style="display:block;">
+        <div class="card__icon">✦</div>
+        <h3>App Design</h3>
+        <p>UX research, wireframing, prototypes, and production-ready design systems that prioritise conversion and retention.</p>
+        <div style="margin-top:1.25rem;display:flex;align-items:center;gap:0.4rem;font-size:0.8rem;font-family:var(--ff-display);font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:0.08em;">
+          Learn more →
+        </div>
+      </a>
+      <a href="./aso/" class="card card-tilt reveal delay-4" style="display:block;">
+        <div class="card__icon">📈</div>
+        <h3>App Marketing</h3>
+        <p>ASO strategy, semantic keyword research, metadata optimisation, and store visual assets that drive organic installs.</p>
+        <div style="margin-top:1.25rem;display:flex;align-items:center;gap:0.4rem;font-size:0.8rem;font-family:var(--ff-display);font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:0.08em;">
+          Learn more →
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════ PROCESS ══════════════ -->
+<section class="section" style="background:var(--bg);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;">
+      <div>
+        <div class="section-head reveal">
+          <p class="label">How We Work</p>
+          <h2>A process built for<br/>results, not theatrics</h2>
+          <p>Every engagement follows a proven workflow that reduces risk, accelerates delivery, and keeps you informed at every milestone.</p>
+        </div>
+        <div class="reveal mt-2">
+          <button class="btn btn-primary" data-modal="request">Discuss Your Project</button>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="step reveal delay-1">
+          <div class="step__num">01 · Discovery</div>
+          <div class="step__content">
+            <h4>Product Discovery</h4>
+            <p>We analyse your market, audience, and business goals to define the right scope and technical approach before writing a single line of code.</p>
+          </div>
+        </div>
+        <div class="step reveal delay-2">
+          <div class="step__num">02 · Strategy</div>
+          <div class="step__content">
+            <h4>Product Strategy</h4>
+            <p>Feature prioritisation, technical stack selection, architecture planning, and project roadmap creation — all aligned to your budget and timeline.</p>
+          </div>
+        </div>
+        <div class="step reveal delay-3">
+          <div class="step__num">03 · Design</div>
+          <div class="step__content">
+            <h4>UX &amp; UI Design</h4>
+            <p>Wireframes, interactive prototypes, and a complete design system ready for developer handoff. Every screen crafted with conversion in mind.</p>
+          </div>
+        </div>
+        <div class="step reveal delay-4">
+          <div class="step__num">04 · Build</div>
+          <div class="step__content">
+            <h4>Engineering</h4>
+            <p>Native iOS or Android development with clean architecture, thorough testing, and regular demo builds for your review throughout the sprint cycle.</p>
+          </div>
+        </div>
+        <div class="step reveal delay-5">
+          <div class="step__num">05 · Launch</div>
+          <div class="step__content">
+            <h4>Store Launch</h4>
+            <p>App Store and Google Play submission, review management, metadata optimisation, and a polished store presence from day one.</p>
+          </div>
+        </div>
+        <div class="step reveal delay-6">
+          <div class="step__num">06 · Growth</div>
+          <div class="step__content">
+            <h4>ASO &amp; Growth</h4>
+            <p>Ongoing keyword monitoring, rating strategies, update planning, and visibility improvements that compound over time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════ WHY US ══════════════ -->
+<section class="section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="label">Why Clients Choose Us</p>
+      <h2>Precision over promises</h2>
+      <p>We are a focused mobile product team — not an agency that outsources your work. Every project is handled by the same people you spoke to on day one.</p>
+    </div>
+
+    <div class="grid-3" style="margin-bottom:4rem;">
+      <div class="card reveal delay-1">
+        <div class="card__icon">⚡</div>
+        <h4>Delivery Confidence</h4>
+        <p>Fixed milestones, transparent timelines, and zero vanishing acts. You always know where your project stands.</p>
+      </div>
+      <div class="card reveal delay-2">
+        <div class="card__icon">🏗</div>
+        <h4>Scalable Architecture</h4>
+        <p>Code written to grow with your product. No technical debt shortcuts that will cost you later.</p>
+      </div>
+      <div class="card reveal delay-3">
+        <div class="card__icon">🎯</div>
+        <h4>Performance Mindset</h4>
+        <p>Speed, stability, and smooth UX are non-negotiables — not premium add-ons. We build for real users.</p>
+      </div>
+      <div class="card reveal delay-1">
+        <div class="card__icon">🚀</div>
+        <h4>Launch Support</h4>
+        <p>We stay until you're live. Store submissions, review handling, and early release monitoring are part of every engagement.</p>
+      </div>
+      <div class="card reveal delay-2">
+        <div class="card__icon">🔍</div>
+        <h4>Store Optimisation</h4>
+        <p>ASO is not an afterthought. We build your store presence alongside the product, so visibility starts from launch day.</p>
+      </div>
+      <div class="card reveal delay-3">
+        <div class="card__icon">🤝</div>
+        <h4>Business-First Thinking</h4>
+        <p>We ask why before we ask how. Every technical decision is evaluated against your actual commercial goals.</p>
+      </div>
+    </div>
+
+    <!-- CTA Block -->
+    <div class="cta-block reveal">
+      <p class="label" style="margin-bottom:1rem;">Ready to build?</p>
+      <h2>Let's start your product conversation</h2>
+      <p>Tell us what you're building. We'll tell you how to make it work — clearly, honestly, without the fluff.</p>
+      <div class="btn-group">
+        <button class="btn btn-primary btn-lg" data-modal="request">Leave a Request</button>
+        <a href="./contacts/" class="btn btn-outline btn-lg">View Contact Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="footer reveal" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <p class="footer__col-title">Offers</p>
+        <ul class="footer__links">
+          <li><a href="./ios/" class="footer__link">iOS Development</a></li>
+          <li><a href="./android/" class="footer__link">Android Development</a></li>
+          <li><a href="./design/" class="footer__link">App Design</a></li>
+          <li><a href="./aso/" class="footer__link">App Marketing</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Company</p>
+        <ul class="footer__links">
+          <li><a href="./" class="footer__link">Home</a></li>
+          <li><a href="./contacts/" class="footer__link">Contacts</a></li>
+          <li><a href="./about/" class="footer__link">About Us</a></li>
+          <li><a href="./policy/" class="footer__link">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Legal Information</p>
+        <div class="footer__legal">
+          <p>CROWN SOFTWARE SYSTEMS LTD</p>
+          <p>635 Manchester Road</p>
+          <p>Wardley, Swinton</p>
+          <p>MANCHESTER, M27 9QH</p>
+          <p style="margin-top:0.5rem;">Company number 16940664</p>
+          <p><a href="mailto:support@crownsoftwares.com">support@crownsoftwares.com</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 CROWN SOFTWARE SYSTEMS LTD. All rights reserved.</p>
+      <span class="footer__logo-text"><span>CROWN</span> SOFTWARE SYSTEMS</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════ MODAL ══════════════ -->
+<div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal">
+    <button class="modal__close" aria-label="Close modal">✕</button>
+    <p class="label">Get in Touch</p>
+    <h3 id="modal-title">Leave a Request</h3>
+    <div class="modal-form-body">
+      <form class="modal-form" novalidate style="margin-top:1.5rem;">
+        <div class="form-group">
+          <label class="form-label" for="modal-name">Name</label>
+          <input class="form-input" type="text" id="modal-name" name="name" placeholder="Your full name" autocomplete="name"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="modal-company">Company</label>
+          <input class="form-input" type="text" id="modal-company" name="company" placeholder="Company name (optional)" autocomplete="organization"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="modal-email">Email</label>
+          <input class="form-input" type="email" id="modal-email" name="email" placeholder="your@email.com" autocomplete="email"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="modal-comment">Comment</label>
+          <textarea class="form-input" id="modal-comment" name="comment" placeholder="Tell us about your project…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary modal-submit" style="width:100%;justify-content:center;">Send Request</button>
+        <p class="form-consent">By clicking "Send Request", you agree to the processing of personal data in accordance with the <a href="./policy/">Privacy Policy</a>.</p>
+      </form>
+    </div>
+    <div class="modal__success">
+      <div class="success-icon">✦</div>
+      <h4>Request Received</h4>
+      <p style="color:var(--text2);font-size:0.92rem;margin-top:0.5rem;">Thank you. We will review your request and reach out within one business day.</p>
+    </div>
+  </div>
+</div>
+
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/modal.js"></script>
+<script src="./assets/js/animations.js"></script>
+</body>
+</html>
