@@ -611,3 +611,24 @@ body::before {
   .page-hero { min-height: 44vh; }
   .header__sections-label { display: none; }
 }
+
+@media (max-width: 1200px) {
+  .header__center {
+    display: none;
+  }
+
+  .header__sections-label {
+    display: none;
+  }
+}
+
+.header__inner {
+  min-width: 0;
+  gap: 12px;
+}
+
+.header__logo {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} 
